@@ -1,13 +1,13 @@
 from sklearn.datasets import load_iris
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 import pickle as pkl
 
 # Load Iris dataset
 iris = load_iris()
 X, y = iris.data, iris.target
 
-# Train a RandomForestClassifier
-clf = RandomForestClassifier()
+# Train a LogisticRegression¶
+clf = LogisticRegression()
 clf.fit(X, y)
 
 
