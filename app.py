@@ -3,7 +3,7 @@ from sklearn.datasets import load_iris
 import pickle as pkl
 iris = load_iris()
 
-model = pkl.load(open('iris_classifier.pkl', 'rb'))
+model = pkl.load(open('iris_model.pkl', 'rb'))
 
 # Sidebar for user input
 st.sidebar.title('Iris Classifier')
